@@ -2,19 +2,65 @@
 <html>
   <head>
     <title>Simple Quiz</title>
-   <link rel="stylesheet" href="style.css">
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        padding: 20px;
+      }
+      form {
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      p {
+        font-weight: bold;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      @media screen and (max-width: 600px) {
+        form {
+          max-width: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
     <h1>Responde a 2 preguntas y obtén un descuento en Idealica</h1>
     <form action="https://l106-co.idealica-lat.com/" method="get">
       <p>Pregunta 1: Cuántos años tiene?</p>
-      <label><input type="radio" name="q1" value="20-40">20-40</label><br>
-      <label><input type="radio" name="q1" value="41-60">41-60</label><br>
-      <label><input type="radio" name="q1" value="61-90">61-90</label><br>
+      <label><input type="radio" name="q1" value="20-40">20-40</label>
+      <label><input type="radio" name="q1" value="41-60">41-60</label>
+      <label><input type="radio" name="q1" value="61-90">61-90</label>
       <p>Pregunta 2: Cuál es tu peso?</p>
-      <label><input type="radio" name="q2" value="40-60">40-60</label><br>
-      <label><input type="radio" name="q2" value="61-80">61-80</label><br>
-      <label><input type="radio" name="q2" value="81-150">81-150</label><br>
+      <label><input type="radio" name="q2" value="40-60">40-60</label>
+      <label><input type="radio" name="q2" value="61-80">61-80</label>
+      <label><input type="radio" name="q2" value="81-150">81-150</label>
       <br>
       <input type="submit" value="Entregar">
     </form>
